@@ -14,6 +14,23 @@ Para el manejo de versiones y almacenamiento de repositorio se utlizo github, el
 - Para la implementacion de este proyecto primero se debia conocer cual era el formato en el cual el API que se nos ofrecia retornaba los datos que se solicitaban. Al verificar que los datos retornados eran en formato JSon ya se tenia una idea de como manejarlos y como recorrer sus valores, como en este caso JSon es key - value, se recorrian las keys del retorno de la pagina para obtener cada uno de los datos que se ofrecian. Al tener claro como se iban a estructurar y usar los datos que teniamos a la mano se comenzo a desarrollar la parte grafica de la aplicacion web, teniendo como premisa que debia ser desarrollada con tecnologia bootstrap y ademas debia ser amigable con el ususario y debia ser responsive design, entonces con ayuda de la documentacion de bootstrap y algunos tutoriales sobre CSS para posicionamiento de objetos en HTML se desarrollo la parte grafica. Al tener la posicion definida para cada objeto y la parte grafica definida, se prosiguio a desarrollar el controlador de la pagina, en este caso la conexion a la API y como se iban a mostrar estos datos obtenidos de la API, entonces se utilizo el lenguaje javascript y el lenguaje axios para conexiones HTTP el cual nos sirve para obtener las respuestas que arroja una peticion GET a una pagina determinada, entonces con algunos tutoriales de javascript y de axios se logro obtener y organizar la informacion obtenida, esto para agregar la funcionalidad de intercambio de moneda que quiera el usuario, actualizacion de precios de monedas y creacion de tabla con cada una de las monedas que la aplicacion ofrece.
 Al tener practicamente la aplicacion web terminada, se prosiguio a alojar la aplicacion web en AWS, en este caso se siguio el tutorial dado para poder realizar esto y que la aplicacion se pueda mostrar para cualquier usuario que la quiera usar desde cualquier red, ya que AWS ofrece la opcion de dar acceso publico a la aplicacion.
 #### Pruebas
+- Como se puede observar en la siguiente imagen, los archivos de la aplicacion web estan correctamente alojados en S3, el servicio de alojamiento que ofrece AWS y se puede observar en la pestaña de properties que el acceso a la aplicacion es publico:
+![AWS S3](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-10-26%2011-06-59.png)
+
+- Como se puede observar en la siguiente imagen la aplicacion ya esta cargada en ASW Services y despliega correctamente con el link que genera AWS, se puede observar que es un diseño amigable con el usuario y sus elementos estan correctamente posicionados, ademas, al cargar la pagina, el primer mensaje que se muesta es que los valores de las monedas ya han sido cargados correctamente:
+![Currency](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-10-26%2011-09-28.png)
+
+- En la siguiente immagen se puede observar que cuando el usuario quiere hacer un cambio de una moneda a otra pero no ha seleccionado la moneda base, se le muestra un mensaje con ambiente de alerta que le hace entender que tiene que seleccionar una moneda base antes de hacer un cambio:
+![Currency](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-10-26%2011-09-53.png)
+
+- Como se puede observar en esta imagen, cuando el usuario da click en el boton de mostrar o esconder la tabla, la aplicacion coloca los elementos de otra forma pero sn afectar la posicion de estos y dejandolo de una forma amigable:
+![Currency](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-10-26%2011-10-07.png)
+
+- En esta imagen se puede observar que cuando el usuario ha seleccionado correctamente una moneda base pero no ha ingresado el valor de la moneda a ser calculado, esta muestra un mensaje de alerta el cual hace entender al usuario que debe ingresar un valor:
+![Currency](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-10-26%2011-10-28.png)
+
+- En esta ultima imagen se puede observar que cuando el usuario ha seleccionado correctamente una moneda y a ingresado un valor correcto, la aplicacion le calcula el valor al que corresponde su moneda base a la moneda del cambio, se muestra en pantalla el valor calculado y ademas se le muestra un mensaje el cual dice que la conversion ha sido completada:
+![Currency](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-10-26%2011-10-43.png)
 
 #### Graficas
 #### Conclusiones
