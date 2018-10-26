@@ -2,7 +2,6 @@
 ### Johan Camilo López Girón
 
 <a href="http://currencyproject-arem.s3-website-us-west-2.amazonaws.com"><img src="https://icon-icons.com/icons2/844/PNG/128/AWS_icon-icons.com_67084.png" alt="AWS Link" width="75" height="75"></a>
-
 #### Documento arquitectura
 #### Introduccion
 - Esta documento presenta la arquitectura del proyecto desarrollado que en este caso es una aplicacion web de intercambio de monedas de diferente denominacion las cuales se obtienen desde un api gratuito el cual con una API key valida retorna los valores actualizados de cada una de las monedas. Esta aplicacion se desarrollo con base en ejemplos de paginas en Bootstrap y ademas usando lenguaje javascript y axios, github para manejo de versiones y AWS para el correcto almacenamiento y despliegue de la aplicacion web en un entorno que no necesita servidor.
