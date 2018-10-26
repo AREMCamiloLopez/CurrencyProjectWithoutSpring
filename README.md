@@ -34,3 +34,4 @@ Al tener practicamente la aplicacion web terminada, se prosiguio a alojar la apl
 
 #### Graficas
 #### Conclusiones
+- En este proyecto se pudo observar que con el conocimiento correcto sobre alojamiento de aplicaciones web en AWS, conocimiento sobre Bootstrap, javascript y algun lenguaje que permita obtener la respuesta a una peticion a una pagina web se puede desarrollar una aplicacion web de cualquier indole y ademas dejandola publica a cualquier usuario que la quiera utilizar desde cualquier red, ademas, que AWS la mantiene siempre activa, y lo mejor, no es necesario un servidor de alojamiento para la aplicacion.
