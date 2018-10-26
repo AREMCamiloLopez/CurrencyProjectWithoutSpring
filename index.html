@@ -8,7 +8,7 @@
         <meta name="author" content="">
         <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
-        <title>Concurrency Project</title>
+        <title>Currency Project</title>
 
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,50 +19,53 @@
 
     <body id="body" onload="loadCurrencies()">
 
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-            <h5 class="my-0 mr-md-auto font-weight-normal">Concurrency Project</h5>
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow" style="position: fixed; width: 100%">
+            <h5 class="my-0 mr-md-auto font-weight-normal">Currency Project</h5>
         </div>
-        <div id="mainDiv" style="display: flex; justify-content: center; align-items: center; position: static; width: 100%">
-            <form id="mainForm">
-                <img style="width: 50%" src="http://icons-for-free.com/free-icons/png/512/1889190.png" class="rounded mx-auto d-block" alt="Responsive image">
-                <div class="input-group input-group-lg">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-lg">Amount</span>
-                    </div>
-                    <input type="number" id="currency1Value" style="margin-right: 1%" placeholder="0.0000" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                    <div class="btn-group dropright">
-                        <button id="currency1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Currency
-                        </button>
-                        <div id="menuButton1" style="overflow-y:scroll; height: 500%" class="dropdown-menu">
-                            <!-- Dropdown menu links -->
+        <br><br><br>
+        <div id="mainDiv" style="justify-content: center; align-items: center; width: 100%; overflow: hidden;">
+            <div id="formDiv" style="display: flex; justify-content: center; align-items: center; width: 100%; float: left; position: fixed;">
+                <form id="mainForm">
+                    <img style="width: 50%" src="http://icons-for-free.com/free-icons/png/512/1889190.png" class="rounded mx-auto d-block" alt="Responsive image">
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-lg">Amount</span>
+                        </div>
+                        <input type="number" id="currency1Value" style="margin-right: 1%" placeholder="0.0000" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                        <div class="btn-group dropright">
+                            <button id="currency1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Currency
+                            </button>
+                            <div id="menuButton1" style="overflow-y:scroll; height: 500%" class="dropdown-menu">
+                                <!-- Dropdown menu links -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                <br>
-                <div class="input-group input-group-lg">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-lg">Amount</span>
-                    </div>
-                    <input type="number" id="currency2Value" disabled style="margin-right: 1%" placeholder="0.0000" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
-                    <div class="btn-group dropright">
-                        <button id="currency2" disabled type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            USD
-                        </button>
-                        <div id="menuButton2" style="overflow-y:scroll; height: 500%" class="dropdown-menu">
-                            <!-- Dropdown menu links -->
+                    <br>
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-lg">Amount</span>
+                        </div>
+                        <input type="number" id="currency2Value" disabled style="margin-right: 1%" placeholder="0.0000" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                        <div class="btn-group dropright">
+                            <button id="currency2" disabled type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                USD
+                            </button>
+                            <div id="menuButton2" style="overflow-y:scroll; height: 500%" class="dropdown-menu">
+                                <!-- Dropdown menu links -->
+                            </div>
                         </div>
                     </div>
-                </div>
-                <br>
-                <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="convertCurrency()">Convert</button>
-                <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="showAlert('Currencies updated', 'alert-danger')">Update currencies</button>
-                <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="showOrHideCurrenciesTable()">Show/hide currencies table</button>
-                <br>
-            </form>
-        </div>
-        <div id="secondDiv" style="display: flex; justify-content: center; align-items: center; position: static; width: 100%;">
+                    <br>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="convertCurrency()">Convert</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="updateCurrencies()">Update currencies</button>
+                    <button type="button" class="btn btn-secondary btn-lg btn-block" onclick="showOrHideCurrenciesTable()">Show/hide currencies table</button>
+                    <br>
+                </form>
+            </div>
+            <div id="secondDiv" style="justify-content: center; align-items: center; height: 50%; overflow:auto; float: right">
 
+            </div>
         </div>
         <!-- Bootstrap core JavaScript
         ================================================== -->
