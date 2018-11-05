@@ -31,6 +31,18 @@ Al tener practicamente la aplicacion web terminada, se prosiguio a alojar la apl
 - En esta imagen se puede observar que cuando el usuario ha seleccionado correctamente una moneda y a ingresado un valor correcto, la aplicacion le calcula el valor al que corresponde su moneda base a la moneda del cambio, se muestra en pantalla el valor calculado y ademas se le muestra un mensaje el cual dice que la conversion ha sido completada:
 ![Currency](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-10-26%2011-10-43.png)
 
-#### Graficas
+- En esta imagen se puede observar como las funciones Lambda estan correctamente creadas en AWS Lambda functions, cada una con su respectivo nombre:
+![AWS Functions](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-11-05%2000-53-41.png)
+
+- En esta imagen se puede observar como estan creados correctamente los API gateways necesarios para este proyecto, en este caso currencyNames son los nombres de cada una de las monedas que ofrece el API que se utilizo, y currencyPrices son los precios de cada una de las monedas con base en dolar americano USD:
+![AWS Api gateway](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-11-05%2000-53-07.png)
+
+- En estas imagenes se puede observar cada uno de los API gateways con sus test aprobados, la respuesta es el JSON que ofrece el API principal:
+![AWS Api gateway test](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-11-05%2000-51-49.png)
+![AWS Api gateway test](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-11-05%2000-52-09.png)
+
+- En estas dos imagenes se puede observar el JSON que retorna cada uno de los API Gateways pero en el navegador:
+![AWS Api gateway navigator](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-11-05%2000-52-35.png)
+![AWS Api gateway navigator](https://github.com/AREMCamiloLopez/CurrencyProjectWithoutSpring/blob/master/screenshots/Screenshot%20from%202018-11-05%2000-52-45.png)
 #### Conclusiones
-- En este proyecto se pudo observar que con el conocimiento correcto sobre alojamiento de aplicaciones web en AWS, conocimiento sobre Bootstrap, javascript y algun lenguaje que permita obtener la respuesta a una peticion a una pagina web se puede desarrollar una aplicacion web de cualquier indole y ademas dejandola publica a cualquier usuario que la quiera utilizar desde cualquier red, ademas, que AWS la mantiene siempre activa, y lo mejor, no es necesario un servidor de alojamiento para la aplicacion.
+- En este proyecto se pudo observar que con el conocimiento correcto sobre alojamiento de aplicaciones web en AWS, el correcto manejo de las funciones Lambda de AWS y el manejo de API gatway, conocimiento sobre Bootstrap, javascript y algun lenguaje que permita obtener la respuesta a una peticion a una pagina web se puede desarrollar una aplicacion web de cualquier indole y ademas dejandola publica a cualquier usuario que la quiera utilizar desde cualquier red, ademas, que AWS la mantiene siempre activa, y lo mejor, no es necesario un servidor de alojamiento para la aplicacion.
