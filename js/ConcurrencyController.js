@@ -4,8 +4,8 @@
  * and open the template in the editor.
  */
 
-var currencyNames = 'https://openexchangerates.org/api/currencies.json?app_id=ada1e8cac2164d1fbea78c5f2559657e';
-var currencyPrices = 'https://openexchangerates.org/api/latest.json?app_id=ada1e8cac2164d1fbea78c5f2559657e';
+var currencyNames = 'https://d0shmupmjk.execute-api.us-west-2.amazonaws.com/prod/currencynames';
+var currencyPrices = 'https://1tc2uzvdce.execute-api.us-west-2.amazonaws.com/prod/currencyprices';
 
 function loadCurrencies() {
 
@@ -159,6 +159,4 @@ function convertCurrency() {
     } else {
         showAlert("You must select a currency", "alert-danger");
     }
-
-
 }
